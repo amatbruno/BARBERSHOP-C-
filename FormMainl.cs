@@ -159,12 +159,12 @@ namespace P13_amatbruno_proyectoBarberTop_p1
                 double priceF = priceC - priceT;
                 textBoxChange.Text = priceF.ToString();
             }
-             
+
             else if (priceC < priceT)
             {
                 MessageBox.Show("Invalid cash");
             }
-                
-            }
+
         }
     }
+}

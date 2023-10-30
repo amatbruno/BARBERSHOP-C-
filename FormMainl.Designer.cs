@@ -28,527 +28,499 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMainl));
-            this.radioButtonWomen = new System.Windows.Forms.RadioButton();
-            this.radioButtonMan = new System.Windows.Forms.RadioButton();
-            this.radioButtonKid = new System.Windows.Forms.RadioButton();
-            this.checkBoxWash = new System.Windows.Forms.CheckBox();
-            this.checkBoxCut = new System.Windows.Forms.CheckBox();
-            this.checkBoxComb = new System.Windows.Forms.CheckBox();
-            this.checkBoxDye = new System.Windows.Forms.CheckBox();
-            this.checkBoxPerm = new System.Windows.Forms.CheckBox();
-            this.labelTime = new System.Windows.Forms.Label();
-            this.labelDate = new System.Windows.Forms.Label();
-            this.comboBoxIVA = new System.Windows.Forms.ComboBox();
-            this.labelIVA = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBoxService = new System.Windows.Forms.TextBox();
-            this.textBoxPrice = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBoxChange = new System.Windows.Forms.TextBox();
-            this.timerHour = new System.Windows.Forms.Timer(this.components);
-            this.textBoxCash = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBoxTotal = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.buttonPrint = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.buttonCalc = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.SuspendLayout();
+            radioButtonWomen = new RadioButton();
+            radioButtonMan = new RadioButton();
+            radioButtonKid = new RadioButton();
+            checkBoxWash = new CheckBox();
+            checkBoxCut = new CheckBox();
+            checkBoxComb = new CheckBox();
+            checkBoxDye = new CheckBox();
+            checkBoxPerm = new CheckBox();
+            labelTime = new Label();
+            labelDate = new Label();
+            comboBoxIVA = new ComboBox();
+            labelIVA = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            textBoxService = new TextBox();
+            textBoxPrice = new TextBox();
+            label7 = new Label();
+            textBoxChange = new TextBox();
+            timerHour = new System.Windows.Forms.Timer(components);
+            textBoxCash = new TextBox();
+            label8 = new Label();
+            textBoxTotal = new TextBox();
+            label9 = new Label();
+            buttonPrint = new Button();
+            label1 = new Label();
+            button1 = new Button();
+            pictureBox1 = new PictureBox();
+            groupBox1 = new GroupBox();
+            groupBox2 = new GroupBox();
+            groupBox3 = new GroupBox();
+            buttonCalc = new Button();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            groupBox1.SuspendLayout();
+            groupBox2.SuspendLayout();
+            groupBox3.SuspendLayout();
+            SuspendLayout();
             // 
             // radioButtonWomen
             // 
-            this.radioButtonWomen.AutoSize = true;
-            this.radioButtonWomen.BackColor = System.Drawing.Color.Transparent;
-            this.radioButtonWomen.Checked = true;
-            this.radioButtonWomen.Font = new System.Drawing.Font("Lucida Calligraphy", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.radioButtonWomen.ForeColor = System.Drawing.Color.White;
-            this.radioButtonWomen.Location = new System.Drawing.Point(39, 57);
-            this.radioButtonWomen.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.radioButtonWomen.Name = "radioButtonWomen";
-            this.radioButtonWomen.Size = new System.Drawing.Size(172, 40);
-            this.radioButtonWomen.TabIndex = 2;
-            this.radioButtonWomen.TabStop = true;
-            this.radioButtonWomen.Text = "WOMEN";
-            this.radioButtonWomen.UseVisualStyleBackColor = false;
-            this.radioButtonWomen.CheckedChanged += new System.EventHandler(this.calculateService);
+            radioButtonWomen.AutoSize = true;
+            radioButtonWomen.BackColor = Color.Transparent;
+            radioButtonWomen.Checked = true;
+            radioButtonWomen.Font = new Font("Lucida Calligraphy", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            radioButtonWomen.ForeColor = Color.White;
+            radioButtonWomen.Location = new Point(34, 43);
+            radioButtonWomen.Name = "radioButtonWomen";
+            radioButtonWomen.Size = new Size(136, 31);
+            radioButtonWomen.TabIndex = 2;
+            radioButtonWomen.TabStop = true;
+            radioButtonWomen.Text = "WOMEN";
+            radioButtonWomen.UseVisualStyleBackColor = false;
+            radioButtonWomen.CheckedChanged += calculateService;
             // 
             // radioButtonMan
             // 
-            this.radioButtonMan.AutoSize = true;
-            this.radioButtonMan.BackColor = System.Drawing.Color.Transparent;
-            this.radioButtonMan.Font = new System.Drawing.Font("Lucida Calligraphy", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.radioButtonMan.ForeColor = System.Drawing.Color.White;
-            this.radioButtonMan.Location = new System.Drawing.Point(39, 101);
-            this.radioButtonMan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.radioButtonMan.Name = "radioButtonMan";
-            this.radioButtonMan.Size = new System.Drawing.Size(118, 40);
-            this.radioButtonMan.TabIndex = 3;
-            this.radioButtonMan.Text = "MEN";
-            this.radioButtonMan.UseVisualStyleBackColor = false;
-            this.radioButtonMan.CheckedChanged += new System.EventHandler(this.calculateService);
+            radioButtonMan.AutoSize = true;
+            radioButtonMan.BackColor = Color.Transparent;
+            radioButtonMan.Font = new Font("Lucida Calligraphy", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            radioButtonMan.ForeColor = Color.White;
+            radioButtonMan.Location = new Point(34, 76);
+            radioButtonMan.Name = "radioButtonMan";
+            radioButtonMan.Size = new Size(94, 31);
+            radioButtonMan.TabIndex = 3;
+            radioButtonMan.Text = "MEN";
+            radioButtonMan.UseVisualStyleBackColor = false;
+            radioButtonMan.CheckedChanged += calculateService;
             // 
             // radioButtonKid
             // 
-            this.radioButtonKid.AutoSize = true;
-            this.radioButtonKid.BackColor = System.Drawing.Color.Transparent;
-            this.radioButtonKid.Font = new System.Drawing.Font("Lucida Calligraphy", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.radioButtonKid.ForeColor = System.Drawing.Color.White;
-            this.radioButtonKid.Location = new System.Drawing.Point(39, 151);
-            this.radioButtonKid.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.radioButtonKid.Name = "radioButtonKid";
-            this.radioButtonKid.Size = new System.Drawing.Size(143, 40);
-            this.radioButtonKid.TabIndex = 4;
-            this.radioButtonKid.Text = "CHILD";
-            this.radioButtonKid.UseVisualStyleBackColor = false;
-            this.radioButtonKid.CheckedChanged += new System.EventHandler(this.calculateService);
+            radioButtonKid.AutoSize = true;
+            radioButtonKid.BackColor = Color.Transparent;
+            radioButtonKid.Font = new Font("Lucida Calligraphy", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            radioButtonKid.ForeColor = Color.White;
+            radioButtonKid.Location = new Point(34, 113);
+            radioButtonKid.Name = "radioButtonKid";
+            radioButtonKid.Size = new Size(114, 31);
+            radioButtonKid.TabIndex = 4;
+            radioButtonKid.Text = "CHILD";
+            radioButtonKid.UseVisualStyleBackColor = false;
+            radioButtonKid.CheckedChanged += calculateService;
             // 
             // checkBoxWash
             // 
-            this.checkBoxWash.AutoSize = true;
-            this.checkBoxWash.BackColor = System.Drawing.Color.Transparent;
-            this.checkBoxWash.Font = new System.Drawing.Font("Lucida Calligraphy", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.checkBoxWash.ForeColor = System.Drawing.Color.White;
-            this.checkBoxWash.Location = new System.Drawing.Point(40, 77);
-            this.checkBoxWash.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.checkBoxWash.Name = "checkBoxWash";
-            this.checkBoxWash.Size = new System.Drawing.Size(142, 40);
-            this.checkBoxWash.TabIndex = 5;
-            this.checkBoxWash.Text = "WASH";
-            this.checkBoxWash.UseVisualStyleBackColor = false;
-            this.checkBoxWash.CheckedChanged += new System.EventHandler(this.calculateService);
+            checkBoxWash.AutoSize = true;
+            checkBoxWash.BackColor = Color.Transparent;
+            checkBoxWash.Font = new Font("Lucida Calligraphy", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            checkBoxWash.ForeColor = Color.White;
+            checkBoxWash.Location = new Point(35, 58);
+            checkBoxWash.Name = "checkBoxWash";
+            checkBoxWash.Size = new Size(113, 31);
+            checkBoxWash.TabIndex = 5;
+            checkBoxWash.Text = "WASH";
+            checkBoxWash.UseVisualStyleBackColor = false;
+            checkBoxWash.CheckedChanged += calculateService;
             // 
             // checkBoxCut
             // 
-            this.checkBoxCut.AutoSize = true;
-            this.checkBoxCut.BackColor = System.Drawing.Color.Transparent;
-            this.checkBoxCut.Font = new System.Drawing.Font("Lucida Calligraphy", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.checkBoxCut.ForeColor = System.Drawing.Color.White;
-            this.checkBoxCut.Location = new System.Drawing.Point(186, 77);
-            this.checkBoxCut.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.checkBoxCut.Name = "checkBoxCut";
-            this.checkBoxCut.Size = new System.Drawing.Size(236, 40);
-            this.checkBoxCut.TabIndex = 6;
-            this.checkBoxCut.Text = "CUT + COMB";
-            this.checkBoxCut.UseVisualStyleBackColor = false;
-            this.checkBoxCut.CheckedChanged += new System.EventHandler(this.calculateService);
+            checkBoxCut.AutoSize = true;
+            checkBoxCut.BackColor = Color.Transparent;
+            checkBoxCut.Font = new Font("Lucida Calligraphy", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            checkBoxCut.ForeColor = Color.White;
+            checkBoxCut.Location = new Point(163, 58);
+            checkBoxCut.Name = "checkBoxCut";
+            checkBoxCut.Size = new Size(189, 31);
+            checkBoxCut.TabIndex = 6;
+            checkBoxCut.Text = "CUT + COMB";
+            checkBoxCut.UseVisualStyleBackColor = false;
+            checkBoxCut.CheckedChanged += calculateService;
             // 
             // checkBoxComb
             // 
-            this.checkBoxComb.AccessibleRole = System.Windows.Forms.AccessibleRole.ButtonDropDownGrid;
-            this.checkBoxComb.AutoSize = true;
-            this.checkBoxComb.BackColor = System.Drawing.Color.Transparent;
-            this.checkBoxComb.Font = new System.Drawing.Font("Lucida Calligraphy", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.checkBoxComb.ForeColor = System.Drawing.Color.White;
-            this.checkBoxComb.Location = new System.Drawing.Point(40, 135);
-            this.checkBoxComb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.checkBoxComb.Name = "checkBoxComb";
-            this.checkBoxComb.Size = new System.Drawing.Size(132, 40);
-            this.checkBoxComb.TabIndex = 7;
-            this.checkBoxComb.Text = "COMB";
-            this.checkBoxComb.UseVisualStyleBackColor = false;
-            this.checkBoxComb.CheckedChanged += new System.EventHandler(this.calculateService);
+            checkBoxComb.AccessibleRole = AccessibleRole.ButtonDropDownGrid;
+            checkBoxComb.AutoSize = true;
+            checkBoxComb.BackColor = Color.Transparent;
+            checkBoxComb.Font = new Font("Lucida Calligraphy", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            checkBoxComb.ForeColor = Color.White;
+            checkBoxComb.Location = new Point(35, 101);
+            checkBoxComb.Name = "checkBoxComb";
+            checkBoxComb.Size = new Size(106, 31);
+            checkBoxComb.TabIndex = 7;
+            checkBoxComb.Text = "COMB";
+            checkBoxComb.UseVisualStyleBackColor = false;
+            checkBoxComb.CheckedChanged += calculateService;
             // 
             // checkBoxDye
             // 
-            this.checkBoxDye.AutoSize = true;
-            this.checkBoxDye.BackColor = System.Drawing.Color.Transparent;
-            this.checkBoxDye.Font = new System.Drawing.Font("Lucida Calligraphy", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.checkBoxDye.ForeColor = System.Drawing.Color.White;
-            this.checkBoxDye.Location = new System.Drawing.Point(186, 135);
-            this.checkBoxDye.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.checkBoxDye.Name = "checkBoxDye";
-            this.checkBoxDye.Size = new System.Drawing.Size(108, 40);
-            this.checkBoxDye.TabIndex = 8;
-            this.checkBoxDye.Text = "DYE";
-            this.checkBoxDye.UseVisualStyleBackColor = false;
-            this.checkBoxDye.CheckedChanged += new System.EventHandler(this.calculateService);
+            checkBoxDye.AutoSize = true;
+            checkBoxDye.BackColor = Color.Transparent;
+            checkBoxDye.Font = new Font("Lucida Calligraphy", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            checkBoxDye.ForeColor = Color.White;
+            checkBoxDye.Location = new Point(163, 101);
+            checkBoxDye.Name = "checkBoxDye";
+            checkBoxDye.Size = new Size(86, 31);
+            checkBoxDye.TabIndex = 8;
+            checkBoxDye.Text = "DYE";
+            checkBoxDye.UseVisualStyleBackColor = false;
+            checkBoxDye.CheckedChanged += calculateService;
             // 
             // checkBoxPerm
             // 
-            this.checkBoxPerm.AutoSize = true;
-            this.checkBoxPerm.BackColor = System.Drawing.Color.Transparent;
-            this.checkBoxPerm.Font = new System.Drawing.Font("Lucida Calligraphy", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.checkBoxPerm.ForeColor = System.Drawing.Color.White;
-            this.checkBoxPerm.Location = new System.Drawing.Point(315, 137);
-            this.checkBoxPerm.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.checkBoxPerm.Name = "checkBoxPerm";
-            this.checkBoxPerm.Size = new System.Drawing.Size(137, 40);
-            this.checkBoxPerm.TabIndex = 9;
-            this.checkBoxPerm.Text = "PERM";
-            this.checkBoxPerm.UseVisualStyleBackColor = false;
-            this.checkBoxPerm.CheckedChanged += new System.EventHandler(this.calculateService);
+            checkBoxPerm.AutoSize = true;
+            checkBoxPerm.BackColor = Color.Transparent;
+            checkBoxPerm.Font = new Font("Lucida Calligraphy", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            checkBoxPerm.ForeColor = Color.White;
+            checkBoxPerm.Location = new Point(276, 103);
+            checkBoxPerm.Name = "checkBoxPerm";
+            checkBoxPerm.Size = new Size(108, 31);
+            checkBoxPerm.TabIndex = 9;
+            checkBoxPerm.Text = "PERM";
+            checkBoxPerm.UseVisualStyleBackColor = false;
+            checkBoxPerm.CheckedChanged += calculateService;
             // 
             // labelTime
             // 
-            this.labelTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelTime.AutoSize = true;
-            this.labelTime.BackColor = System.Drawing.Color.Transparent;
-            this.labelTime.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.labelTime.Font = new System.Drawing.Font("Palatino Linotype", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelTime.ForeColor = System.Drawing.Color.White;
-            this.labelTime.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.labelTime.Location = new System.Drawing.Point(1205, 116);
-            this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(108, 48);
-            this.labelTime.TabIndex = 11;
-            this.labelTime.Text = "label2";
+            labelTime.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            labelTime.AutoSize = true;
+            labelTime.BackColor = Color.Transparent;
+            labelTime.BorderStyle = BorderStyle.Fixed3D;
+            labelTime.Font = new Font("Palatino Linotype", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            labelTime.ForeColor = Color.White;
+            labelTime.ImageAlign = ContentAlignment.TopRight;
+            labelTime.Location = new Point(1054, 87);
+            labelTime.Name = "labelTime";
+            labelTime.Size = new Size(86, 38);
+            labelTime.TabIndex = 11;
+            labelTime.Text = "label2";
             // 
             // labelDate
             // 
-            this.labelDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelDate.AutoSize = true;
-            this.labelDate.BackColor = System.Drawing.Color.Transparent;
-            this.labelDate.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.labelDate.Font = new System.Drawing.Font("Palatino Linotype", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.labelDate.ForeColor = System.Drawing.Color.White;
-            this.labelDate.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.labelDate.Location = new System.Drawing.Point(1205, 55);
-            this.labelDate.Name = "labelDate";
-            this.labelDate.Size = new System.Drawing.Size(108, 48);
-            this.labelDate.TabIndex = 10;
-            this.labelDate.Text = "label1";
+            labelDate.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            labelDate.AutoSize = true;
+            labelDate.BackColor = Color.Transparent;
+            labelDate.BorderStyle = BorderStyle.Fixed3D;
+            labelDate.Font = new Font("Palatino Linotype", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            labelDate.ForeColor = Color.White;
+            labelDate.ImageAlign = ContentAlignment.TopRight;
+            labelDate.Location = new Point(1054, 41);
+            labelDate.Name = "labelDate";
+            labelDate.Size = new Size(86, 38);
+            labelDate.TabIndex = 10;
+            labelDate.Text = "label1";
             // 
             // comboBoxIVA
             // 
-            this.comboBoxIVA.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.comboBoxIVA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxIVA.DropDownWidth = 10;
-            this.comboBoxIVA.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBoxIVA.ForeColor = System.Drawing.Color.Black;
-            this.comboBoxIVA.FormattingEnabled = true;
-            this.comboBoxIVA.Items.AddRange(new object[] {
-            "0",
-            "4",
-            "10",
-            "21"});
-            this.comboBoxIVA.Location = new System.Drawing.Point(163, 155);
-            this.comboBoxIVA.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.comboBoxIVA.Name = "comboBoxIVA";
-            this.comboBoxIVA.Size = new System.Drawing.Size(102, 40);
-            this.comboBoxIVA.TabIndex = 12;
+            comboBoxIVA.Anchor = AnchorStyles.Right;
+            comboBoxIVA.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxIVA.DropDownWidth = 10;
+            comboBoxIVA.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            comboBoxIVA.ForeColor = Color.Black;
+            comboBoxIVA.FormattingEnabled = true;
+            comboBoxIVA.Items.AddRange(new object[] { "0", "4", "10", "21" });
+            comboBoxIVA.Location = new Point(143, 116);
+            comboBoxIVA.Name = "comboBoxIVA";
+            comboBoxIVA.Size = new Size(90, 33);
+            comboBoxIVA.TabIndex = 12;
             // 
             // labelIVA
             // 
-            this.labelIVA.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.labelIVA.AutoSize = true;
-            this.labelIVA.BackColor = System.Drawing.Color.Transparent;
-            this.labelIVA.Font = new System.Drawing.Font("Lucida Calligraphy", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelIVA.ForeColor = System.Drawing.Color.White;
-            this.labelIVA.Location = new System.Drawing.Point(80, 161);
-            this.labelIVA.Name = "labelIVA";
-            this.labelIVA.Size = new System.Drawing.Size(72, 31);
-            this.labelIVA.TabIndex = 17;
-            this.labelIVA.Text = "IVA";
+            labelIVA.Anchor = AnchorStyles.Right;
+            labelIVA.AutoSize = true;
+            labelIVA.BackColor = Color.Transparent;
+            labelIVA.Font = new Font("Lucida Calligraphy", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            labelIVA.ForeColor = Color.White;
+            labelIVA.Location = new Point(70, 121);
+            labelIVA.Name = "labelIVA";
+            labelIVA.Size = new Size(58, 24);
+            labelIVA.TabIndex = 17;
+            labelIVA.Text = "IVA";
             // 
             // label5
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Lucida Calligraphy", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(18, 71);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(140, 31);
-            this.label5.TabIndex = 19;
-            this.label5.Text = "SERVICE";
+            label5.Anchor = AnchorStyles.Right;
+            label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Lucida Calligraphy", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.ForeColor = Color.White;
+            label5.Location = new Point(16, 53);
+            label5.Name = "label5";
+            label5.Size = new Size(112, 24);
+            label5.TabIndex = 19;
+            label5.Text = "SERVICE";
             // 
             // label6
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Lucida Calligraphy", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(51, 113);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(103, 31);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "PRICE";
+            label6.Anchor = AnchorStyles.Right;
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Lucida Calligraphy", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.ForeColor = Color.White;
+            label6.Location = new Point(45, 85);
+            label6.Name = "label6";
+            label6.Size = new Size(83, 24);
+            label6.TabIndex = 20;
+            label6.Text = "PRICE";
             // 
             // textBoxService
             // 
-            this.textBoxService.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.textBoxService.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxService.ForeColor = System.Drawing.Color.Black;
-            this.textBoxService.Location = new System.Drawing.Point(163, 64);
-            this.textBoxService.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBoxService.Name = "textBoxService";
-            this.textBoxService.ReadOnly = true;
-            this.textBoxService.Size = new System.Drawing.Size(102, 39);
-            this.textBoxService.TabIndex = 22;
-            this.textBoxService.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBoxService.TextChanged += new System.EventHandler(this.calculateService);
+            textBoxService.Anchor = AnchorStyles.Right;
+            textBoxService.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxService.ForeColor = Color.Black;
+            textBoxService.Location = new Point(143, 48);
+            textBoxService.Name = "textBoxService";
+            textBoxService.ReadOnly = true;
+            textBoxService.Size = new Size(90, 33);
+            textBoxService.TabIndex = 22;
+            textBoxService.TextAlign = HorizontalAlignment.Center;
+            textBoxService.TextChanged += calculateService;
             // 
             // textBoxPrice
             // 
-            this.textBoxPrice.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.textBoxPrice.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxPrice.ForeColor = System.Drawing.Color.Black;
-            this.textBoxPrice.Location = new System.Drawing.Point(163, 109);
-            this.textBoxPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBoxPrice.Name = "textBoxPrice";
-            this.textBoxPrice.ReadOnly = true;
-            this.textBoxPrice.Size = new System.Drawing.Size(102, 39);
-            this.textBoxPrice.TabIndex = 23;
-            this.textBoxPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            textBoxPrice.Anchor = AnchorStyles.Right;
+            textBoxPrice.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxPrice.ForeColor = Color.Black;
+            textBoxPrice.Location = new Point(143, 82);
+            textBoxPrice.Name = "textBoxPrice";
+            textBoxPrice.ReadOnly = true;
+            textBoxPrice.Size = new Size(90, 33);
+            textBoxPrice.TabIndex = 23;
+            textBoxPrice.TextAlign = HorizontalAlignment.Center;
             // 
             // label7
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Lucida Calligraphy", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(7, 385);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(145, 31);
-            this.label7.TabIndex = 24;
-            this.label7.Text = "CHANGE";
+            label7.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            label7.AutoSize = true;
+            label7.BackColor = Color.Transparent;
+            label7.Font = new Font("Lucida Calligraphy", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(6, 289);
+            label7.Name = "label7";
+            label7.Size = new Size(116, 24);
+            label7.TabIndex = 24;
+            label7.Text = "CHANGE";
             // 
             // textBoxChange
             // 
-            this.textBoxChange.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxChange.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxChange.ForeColor = System.Drawing.Color.Black;
-            this.textBoxChange.Location = new System.Drawing.Point(163, 382);
-            this.textBoxChange.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBoxChange.Name = "textBoxChange";
-            this.textBoxChange.ReadOnly = true;
-            this.textBoxChange.Size = new System.Drawing.Size(102, 39);
-            this.textBoxChange.TabIndex = 25;
-            this.textBoxChange.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            textBoxChange.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            textBoxChange.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxChange.ForeColor = Color.Black;
+            textBoxChange.Location = new Point(143, 286);
+            textBoxChange.Name = "textBoxChange";
+            textBoxChange.ReadOnly = true;
+            textBoxChange.Size = new Size(90, 33);
+            textBoxChange.TabIndex = 25;
+            textBoxChange.TextAlign = HorizontalAlignment.Center;
             // 
             // timerHour
             // 
-            this.timerHour.Enabled = true;
-            this.timerHour.Tick += new System.EventHandler(this.timerHour_Tick);
+            timerHour.Enabled = true;
+            timerHour.Tick += timerHour_Tick;
             // 
             // textBoxCash
             // 
-            this.textBoxCash.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxCash.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxCash.ForeColor = System.Drawing.Color.Black;
-            this.textBoxCash.Location = new System.Drawing.Point(163, 272);
-            this.textBoxCash.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBoxCash.Name = "textBoxCash";
-            this.textBoxCash.Size = new System.Drawing.Size(102, 39);
-            this.textBoxCash.TabIndex = 27;
-            this.textBoxCash.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            textBoxCash.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            textBoxCash.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxCash.ForeColor = Color.Black;
+            textBoxCash.Location = new Point(143, 204);
+            textBoxCash.Name = "textBoxCash";
+            textBoxCash.Size = new Size(90, 33);
+            textBoxCash.TabIndex = 27;
+            textBoxCash.TextAlign = HorizontalAlignment.Center;
             // 
             // label8
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Lucida Calligraphy", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(57, 277);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(96, 31);
-            this.label8.TabIndex = 26;
-            this.label8.Text = "CASH";
+            label8.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            label8.AutoSize = true;
+            label8.BackColor = Color.Transparent;
+            label8.Font = new Font("Lucida Calligraphy", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.ForeColor = Color.White;
+            label8.Location = new Point(50, 208);
+            label8.Name = "label8";
+            label8.Size = new Size(77, 24);
+            label8.TabIndex = 26;
+            label8.Text = "CASH";
             // 
             // textBoxTotal
             // 
-            this.textBoxTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTotal.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBoxTotal.ForeColor = System.Drawing.Color.Black;
-            this.textBoxTotal.Location = new System.Drawing.Point(163, 225);
-            this.textBoxTotal.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBoxTotal.Name = "textBoxTotal";
-            this.textBoxTotal.ReadOnly = true;
-            this.textBoxTotal.Size = new System.Drawing.Size(102, 39);
-            this.textBoxTotal.TabIndex = 29;
-            this.textBoxTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            textBoxTotal.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            textBoxTotal.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            textBoxTotal.ForeColor = Color.Black;
+            textBoxTotal.Location = new Point(143, 169);
+            textBoxTotal.Name = "textBoxTotal";
+            textBoxTotal.ReadOnly = true;
+            textBoxTotal.Size = new Size(90, 33);
+            textBoxTotal.TabIndex = 29;
+            textBoxTotal.TextAlign = HorizontalAlignment.Center;
             // 
             // label9
             // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Lucida Calligraphy", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(42, 236);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(111, 31);
-            this.label9.TabIndex = 28;
-            this.label9.Text = "TOTAL";
+            label9.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            label9.AutoSize = true;
+            label9.BackColor = Color.Transparent;
+            label9.Font = new Font("Lucida Calligraphy", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label9.ForeColor = Color.White;
+            label9.Location = new Point(37, 177);
+            label9.Name = "label9";
+            label9.Size = new Size(90, 24);
+            label9.TabIndex = 28;
+            label9.Text = "TOTAL";
             // 
             // buttonPrint
             // 
-            this.buttonPrint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonPrint.Font = new System.Drawing.Font("Lucida Calligraphy", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonPrint.ForeColor = System.Drawing.Color.Black;
-            this.buttonPrint.Location = new System.Drawing.Point(80, 443);
-            this.buttonPrint.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.buttonPrint.Name = "buttonPrint";
-            this.buttonPrint.Size = new System.Drawing.Size(158, 43);
-            this.buttonPrint.TabIndex = 31;
-            this.buttonPrint.Text = "PRINT BILL";
-            this.buttonPrint.UseVisualStyleBackColor = true;
-            this.buttonPrint.Click += new System.EventHandler(this.buttonPrint_Click);
+            buttonPrint.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            buttonPrint.Font = new Font("Lucida Calligraphy", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonPrint.ForeColor = Color.Black;
+            buttonPrint.Location = new Point(70, 332);
+            buttonPrint.Name = "buttonPrint";
+            buttonPrint.Size = new Size(138, 32);
+            buttonPrint.TabIndex = 31;
+            buttonPrint.Text = "PRINT BILL";
+            buttonPrint.UseVisualStyleBackColor = true;
+            buttonPrint.Click += buttonPrint_Click;
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Black;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Font = new System.Drawing.Font("Lucida Calligraphy", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(58, 55);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1066, 66);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "WELCOME!  What we gonna do today?";
+            label1.Anchor = AnchorStyles.Top;
+            label1.AutoSize = true;
+            label1.BackColor = Color.Black;
+            label1.BorderStyle = BorderStyle.Fixed3D;
+            label1.Font = new Font("Lucida Calligraphy", 30F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(51, 41);
+            label1.Name = "label1";
+            label1.Size = new Size(849, 54);
+            label1.TabIndex = 13;
+            label1.Text = "WELCOME!  What we gonna do today?";
             // 
             // button1
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button1.Font = new System.Drawing.Font("Lucida Calligraphy", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(738, 676);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 64);
-            this.button1.TabIndex = 33;
-            this.button1.Text = "I WANT TO CALCULATE \r\nIT BY MY OWN";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.calculatorClick);
+            button1.Anchor = AnchorStyles.Bottom;
+            button1.Font = new Font("Lucida Calligraphy", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.Location = new Point(646, 507);
+            button1.Name = "button1";
+            button1.Size = new Size(131, 48);
+            button1.TabIndex = 33;
+            button1.Text = "I WANT TO CALCULATE \r\nIT BY MY OWN";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += calculatorClick;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(647, 253);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(354, 345);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 35;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(566, 190);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(310, 259);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 35;
+            pictureBox1.TabStop = false;
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.radioButtonWomen);
-            this.groupBox1.Controls.Add(this.radioButtonMan);
-            this.groupBox1.Controls.Add(this.radioButtonKid);
-            this.groupBox1.Font = new System.Drawing.Font("Lucida Calligraphy", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(58, 228);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox1.Size = new System.Drawing.Size(534, 216);
-            this.groupBox1.TabIndex = 36;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "SELECT YOUR GENDER";
+            groupBox1.Anchor = AnchorStyles.Left;
+            groupBox1.BackColor = Color.Transparent;
+            groupBox1.Controls.Add(radioButtonWomen);
+            groupBox1.Controls.Add(radioButtonMan);
+            groupBox1.Controls.Add(radioButtonKid);
+            groupBox1.Font = new Font("Lucida Calligraphy", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            groupBox1.ForeColor = Color.White;
+            groupBox1.Location = new Point(51, 171);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(467, 162);
+            groupBox1.TabIndex = 36;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "SELECT YOUR GENDER";
             // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.checkBoxWash);
-            this.groupBox2.Controls.Add(this.checkBoxCut);
-            this.groupBox2.Controls.Add(this.checkBoxComb);
-            this.groupBox2.Controls.Add(this.checkBoxDye);
-            this.groupBox2.Controls.Add(this.checkBoxPerm);
-            this.groupBox2.Font = new System.Drawing.Font("Lucida Calligraphy", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(58, 519);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox2.Size = new System.Drawing.Size(534, 216);
-            this.groupBox2.TabIndex = 37;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "SELECT YOUR SERVICES";
+            groupBox2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            groupBox2.BackColor = Color.Transparent;
+            groupBox2.Controls.Add(checkBoxWash);
+            groupBox2.Controls.Add(checkBoxCut);
+            groupBox2.Controls.Add(checkBoxComb);
+            groupBox2.Controls.Add(checkBoxDye);
+            groupBox2.Controls.Add(checkBoxPerm);
+            groupBox2.Font = new Font("Lucida Calligraphy", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            groupBox2.ForeColor = Color.White;
+            groupBox2.Location = new Point(51, 389);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(467, 162);
+            groupBox2.TabIndex = 37;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "SELECT YOUR SERVICES";
             // 
             // groupBox3
             // 
-            this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox3.Controls.Add(this.buttonCalc);
-            this.groupBox3.Controls.Add(this.textBoxService);
-            this.groupBox3.Controls.Add(this.comboBoxIVA);
-            this.groupBox3.Controls.Add(this.labelIVA);
-            this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.textBoxPrice);
-            this.groupBox3.Controls.Add(this.buttonPrint);
-            this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Controls.Add(this.textBoxChange);
-            this.groupBox3.Controls.Add(this.textBoxTotal);
-            this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Controls.Add(this.textBoxCash);
-            this.groupBox3.Font = new System.Drawing.Font("Lucida Calligraphy", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox3.ForeColor = System.Drawing.Color.White;
-            this.groupBox3.Location = new System.Drawing.Point(1021, 233);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.groupBox3.Size = new System.Drawing.Size(313, 507);
-            this.groupBox3.TabIndex = 38;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "BILL";
+            groupBox3.Anchor = AnchorStyles.Right;
+            groupBox3.BackColor = Color.Transparent;
+            groupBox3.Controls.Add(buttonCalc);
+            groupBox3.Controls.Add(textBoxService);
+            groupBox3.Controls.Add(comboBoxIVA);
+            groupBox3.Controls.Add(labelIVA);
+            groupBox3.Controls.Add(label5);
+            groupBox3.Controls.Add(label6);
+            groupBox3.Controls.Add(textBoxPrice);
+            groupBox3.Controls.Add(buttonPrint);
+            groupBox3.Controls.Add(label7);
+            groupBox3.Controls.Add(textBoxChange);
+            groupBox3.Controls.Add(textBoxTotal);
+            groupBox3.Controls.Add(label8);
+            groupBox3.Controls.Add(label9);
+            groupBox3.Controls.Add(textBoxCash);
+            groupBox3.Font = new Font("Lucida Calligraphy", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            groupBox3.ForeColor = Color.White;
+            groupBox3.Location = new Point(893, 175);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new Size(274, 380);
+            groupBox3.TabIndex = 38;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "BILL";
             // 
             // buttonCalc
             // 
-            this.buttonCalc.Font = new System.Drawing.Font("Lucida Calligraphy", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.buttonCalc.ForeColor = System.Drawing.Color.Black;
-            this.buttonCalc.Location = new System.Drawing.Point(91, 322);
-            this.buttonCalc.Name = "buttonCalc";
-            this.buttonCalc.Size = new System.Drawing.Size(165, 35);
-            this.buttonCalc.TabIndex = 39;
-            this.buttonCalc.Text = "CALCULATE";
-            this.buttonCalc.UseVisualStyleBackColor = true;
-            this.buttonCalc.Click += new System.EventHandler(this.buttonCalc_Click);
+            buttonCalc.Font = new Font("Lucida Calligraphy", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            buttonCalc.ForeColor = Color.Black;
+            buttonCalc.Location = new Point(80, 242);
+            buttonCalc.Margin = new Padding(3, 2, 3, 2);
+            buttonCalc.Name = "buttonCalc";
+            buttonCalc.Size = new Size(144, 26);
+            buttonCalc.TabIndex = 39;
+            buttonCalc.Text = "CALCULATE";
+            buttonCalc.UseVisualStyleBackColor = true;
+            buttonCalc.Click += buttonCalc_Click;
             // 
             // FormMainl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.Color.Black;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1445, 824);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.labelTime);
-            this.Controls.Add(this.labelDate);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "FormMainl";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormMainl";
-            this.Load += new System.EventHandler(this.FormMainl_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            BackColor = Color.Black;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(1264, 618);
+            Controls.Add(groupBox3);
+            Controls.Add(groupBox2);
+            Controls.Add(groupBox1);
+            Controls.Add(pictureBox1);
+            Controls.Add(button1);
+            Controls.Add(label1);
+            Controls.Add(labelTime);
+            Controls.Add(labelDate);
+            Name = "FormMainl";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "FormMainl";
+            Load += FormMainl_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
